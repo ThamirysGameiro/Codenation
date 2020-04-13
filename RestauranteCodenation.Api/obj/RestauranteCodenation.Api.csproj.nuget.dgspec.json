@@ -1,0 +1,221 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Api\\RestauranteCodenation.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Api\\RestauranteCodenation.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Api\\RestauranteCodenation.Api.csproj",
+        "projectName": "RestauranteCodenation.Api",
+        "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Api\\RestauranteCodenation.Api.csproj",
+        "packagesPath": "C:\\Users\\thami\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj": {
+                "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj"
+              },
+              "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj": {
+                "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj",
+        "projectName": "RestauranteCodenation.Data",
+        "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj",
+        "packagesPath": "C:\\Users\\thami\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj": {
+                "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj",
+        "projectName": "RestauranteCodenation.Domain",
+        "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj",
+        "packagesPath": "C:\\Users\\thami\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

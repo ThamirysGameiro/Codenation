@@ -1,0 +1,16 @@
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Domain\bin\Debug\netcoreapp3.1\RestauranteCodenation.Domain.deps.json
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Domain\bin\Debug\netcoreapp3.1\RestauranteCodenation.Domain.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Domain\bin\Debug\netcoreapp3.1\RestauranteCodenation.Domain.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.csprojAssemblyReference.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.AssemblyInfoInputs.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.AssemblyInfo.cs
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Domain\bin\Debug\netcoreapp3.1\RestauranteCodenation.Domain.deps.json
+C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Domain\bin\Debug\netcoreapp3.1\RestauranteCodenation.Domain.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Domain\bin\Debug\netcoreapp3.1\RestauranteCodenation.Domain.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.csprojAssemblyReference.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.AssemblyInfoInputs.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.AssemblyInfo.cs
+C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Domain\obj\Debug\netcoreapp3.1\RestauranteCodenation.Domain.pdb
