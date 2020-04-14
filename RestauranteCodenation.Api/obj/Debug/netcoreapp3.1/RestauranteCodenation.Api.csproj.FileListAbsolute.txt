@@ -124,7 +124,6 @@ C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\obj\Debug\netcoreapp3.1\RestauranteCodenation.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -255,3 +254,16 @@ C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Api\obj\Debug\netcoreapp3.1\RestauranteCodenation.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\RestauranteCodenation.Application.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\RestauranteCodenation.Application.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\obj\Debug\netcoreapp3.1\RestauranteCodenation.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\obj\Debug\netcoreapp3.1\RestauranteCodenation.Api.MvcApplicationPartsAssemblyInfo.cache

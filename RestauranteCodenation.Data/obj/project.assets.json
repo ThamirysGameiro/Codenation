@@ -4968,11 +4968,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj",
+      "projectUniqueName": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj",
       "projectName": "RestauranteCodenation.Data",
-      "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj",
+      "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation\\RestauranteCodenation.Data\\RestauranteCodenation.Data.csproj",
       "packagesPath": "C:\\Users\\thami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Data\\obj\\",
+      "outputPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation\\RestauranteCodenation.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4991,8 +4991,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj": {
-              "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation - Copia\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj"
+            "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj": {
+              "projectPath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj"
             }
           }
         }

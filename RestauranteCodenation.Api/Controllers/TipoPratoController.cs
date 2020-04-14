@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using RestauranteCodenation.Domain;
-using RestauranteCodenation.Domain.Repositorio;
+using RestauranteCodenation.Application;
 
 namespace RestauranteCodenation.Api.Controllers
 {
@@ -9,43 +8,43 @@ namespace RestauranteCodenation.Api.Controllers
     [ApiController]
     public class TipoPratoController : ControllerBase
     {
-        private readonly ITipoPratoRepositorio _repo;
-        public TipoPratoController(ITipoPratoRepositorio repo)
+        private readonly ITipoPratoAplicacao _app;
+        public TipoPratoController(ITipoPratoAplicacao app)
         {
-            _repo = repo;
+            _app = app;
         }
-        
+
         [HttpGet]
-        public IEnumerable<TipoPrato> Get()
+        public IEnumerable<TipoPratoViewModel> Get()
         {
-            return _repo.SelecionarTodos();
+            return _app.SelecionarTodos();
         }
 
         [HttpGet("{id}")]
-        public TipoPrato Get(int id)
+        public TipoPratoViewModel Get(int id)
         {
-            return _repo.SelecionarPorId(id);
+            return _app.SelecionarPorId(id);
         }
 
         [HttpPost]
-        public TipoPrato Post([FromBody] TipoPrato tipoPrato)
+        public TipoPratoViewModel Post([FromBody] TipoPratoViewModel tipoPrato)
         {
-            _repo.Incluir(tipoPrato);
+            _app.Incluir(tipoPrato);
             return tipoPrato;
         }
 
         [HttpPut("{id}")]
-        public TipoPrato Put([FromBody] TipoPrato tipoPrato)
+        public TipoPratoViewModel Put([FromBody] TipoPratoViewModel tipoPrato)
         {
-            _repo.Alterar(tipoPrato);
+            _app.Alterar(tipoPrato);
             return tipoPrato;
         }
 
         [HttpDelete("{id}")]
-        public List<TipoPrato> Delete(int id)
+        public List<TipoPratoViewModel> Delete(int id)
         {
-            _repo.Excluir(id);
-            return _repo.SelecionarTodos();
+            _app.Excluir(id);
+            return _app.SelecionarTodos();
         }
     }
 }
