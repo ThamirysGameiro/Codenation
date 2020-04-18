@@ -1,12 +1,14 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using RestauranteCodenation.Application;
 using RestauranteCodenation.Application.Mapper;
+using RestauranteCodenation.Data;
 using RestauranteCodenation.Data.Repositorio;
 using RestauranteCodenation.Domain.Repositorio;
 
@@ -47,6 +49,9 @@ namespace RestauranteCodenation.Api
 
             services.AddAutoMapper(typeof(AutoMapperConfig));
             services.AddSwaggerGen(x => x.SwaggerDoc(name: "v1", new OpenApiInfo { Title = "Restaurante da Thamy", Version = "v1" }));
+
+            services.AddDbContext<Contexto>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("MinhaConexao")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

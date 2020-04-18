@@ -9,3 +9,4 @@ C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Applicat
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Application\bin\Debug\netcoreapp3.1\RestauranteCodenation.Application.pdb
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Application\obj\Debug\netcoreapp3.1\RestauranteCodenation.Application.dll
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Application\obj\Debug\netcoreapp3.1\RestauranteCodenation.Application.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Application\obj\Debug\netcoreapp3.1\RestauranteCodenation.Application.csproj.CoreCompileInputs.cache

@@ -24,3 +24,5 @@ C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Data\obj\Debug\netcoreapp3.1\RestauranteCodenation.Data.csproj.CopyComplete
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Data\obj\Debug\netcoreapp3.1\RestauranteCodenation.Data.dll
 C:\Users\thami\Source\Repos\RestauranteCodenation - Copia\RestauranteCodenation.Data\obj\Debug\netcoreapp3.1\RestauranteCodenation.Data.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Data\obj\Debug\netcoreapp3.1\RestauranteCodenation.Data.genruntimeconfig.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Data\obj\Debug\netcoreapp3.1\RestauranteCodenation.Data.csproj.CoreCompileInputs.cache

@@ -5,6 +5,9 @@ namespace RestauranteCodenation.Data.Repositorio
 {
     public class IngredienteRepositorio : RepositorioBase<Ingrediente>, IIngredienteRepositorio
     {
-       
+        public IngredienteRepositorio(Contexto contexto) : base(contexto)
+        {
+
+        }
     }
 }

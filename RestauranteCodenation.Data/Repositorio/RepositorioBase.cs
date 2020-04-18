@@ -7,9 +7,9 @@ namespace RestauranteCodenation.Data.Repositorio
     public class RepositorioBase<T> : IRepositorioBase<T> where T : class, IEntity
     {
         protected readonly Contexto _contexto;
-        public RepositorioBase()
+        public RepositorioBase(Contexto contexto)
         {
-            _contexto = new Contexto();
+            _contexto = contexto;
         }
 
         public void Incluir(T entity)
