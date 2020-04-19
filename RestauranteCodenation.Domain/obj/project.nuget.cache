@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "zyUe1O6Vlx1Ugn2f5FCJpowioU5nM8XitDGkKm31Lqwz41EiXN8bi6m2waCjEI1PQDHdme3ymUciWg3IJcJcYg==",
+  "dgSpecHash": "I5O/4gZzrq9US/EhZNlnbgTYtQhyc3LgcbZIYO+6/hXxCplPT4Tly1FWpyLATCOUk8mCqNI/kDdLXwCJmrEh9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\thami\\Source\\Repos\\RestauranteCodenation\\RestauranteCodenation.Domain\\RestauranteCodenation.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.3\\microsoft.extensions.caching.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.3\\microsoft.extensions.configuration.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.3\\microsoft.extensions.configuration.binder.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.3\\microsoft.extensions.dependencyinjection.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.3\\microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.3\\microsoft.extensions.identity.core.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.3\\microsoft.extensions.identity.stores.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.logging\\3.1.3\\microsoft.extensions.logging.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.3\\microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.options\\3.1.3\\microsoft.extensions.options.3.1.3.nupkg.sha512",
+    "C:\\Users\\thami\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512"
+  ],
   "logs": []
 }

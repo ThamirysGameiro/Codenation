@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using RestauranteCodenation.Data.Repositorio;
 using RestauranteCodenation.Domain;
 using RestauranteCodenation.Domain.Repositorio;
 
 namespace RestauranteCodenation.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class IngredienteController : ControllerBase
@@ -18,7 +15,7 @@ namespace RestauranteCodenation.Api.Controllers
         public IngredienteController(IIngredienteRepositorio repo)
         {
             _repo = repo;
-        }
+        }        
         
         [HttpGet]
         public IEnumerable<Ingrediente> Get()

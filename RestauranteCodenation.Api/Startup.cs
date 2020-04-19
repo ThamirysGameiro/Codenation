@@ -1,16 +1,23 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using RestauranteCodenation.Application;
+using RestauranteCodenation.Application.App;
+using RestauranteCodenation.Application.Interface;
 using RestauranteCodenation.Application.Mapper;
+using RestauranteCodenation.Application.ViewModel;
 using RestauranteCodenation.Data;
 using RestauranteCodenation.Data.Repositorio;
 using RestauranteCodenation.Domain.Repositorio;
+using System.Text;
 
 namespace RestauranteCodenation.Api
 {
@@ -38,6 +45,7 @@ namespace RestauranteCodenation.Api
             services.AddScoped<IIngredienteRepositorio, IngredienteRepositorio>();
             services.AddScoped<IPratoRepositorio, PratoRepositorio>();
             services.AddScoped<IPratosIngredientesRepositorio, PratosIngredientesRepositorio>();
+            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
                         
             services.AddScoped<ITipoPratoAplicacao, TipoPratoAplicacao>();
             services.AddScoped<IAgendaCardapioAplicacao, AgendaCardapioAplicacao>();
@@ -46,12 +54,41 @@ namespace RestauranteCodenation.Api
             services.AddScoped<IIngredienteAplicacao, IngredienteAplicacao>();
             services.AddScoped<IPratoAplicacao, PratoAplicacao>();
             services.AddScoped<IPratosIngredientesAplicacao, PratosIngredientesAplicacao>();
+            services.AddScoped<IUsuarioAplicacao, UsuarioAplicacao>();
 
             services.AddAutoMapper(typeof(AutoMapperConfig));
             services.AddSwaggerGen(x => x.SwaggerDoc(name: "v1", new OpenApiInfo { Title = "Restaurante da Thamy", Version = "v1" }));
 
             services.AddDbContext<Contexto>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("MinhaConexao")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+              .AddEntityFrameworkStores<Contexto>();
+
+            var section = Configuration.GetSection("Token");
+            services.Configure<Token>(section);
+
+            var token = section.Get<Token>();
+            var key = Encoding.ASCII.GetBytes(token.Secret);
+
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = true;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = token.ValidoEm,
+                    ValidIssuer = token.Emissor
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +106,8 @@ namespace RestauranteCodenation.Api
             });
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
