@@ -2,22 +2,15 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using RestauranteCodenation.Application;
-using RestauranteCodenation.Application.App;
-using RestauranteCodenation.Application.Interface;
 using RestauranteCodenation.Application.Mapper;
 using RestauranteCodenation.Application.ViewModel;
-using RestauranteCodenation.Data;
-using RestauranteCodenation.Data.Repositorio;
-using RestauranteCodenation.Domain.Repositorio;
 using System.Text;
+using RestauranteCodenation.Infra.IoC;
 
 namespace RestauranteCodenation.Api
 {
@@ -33,37 +26,13 @@ namespace RestauranteCodenation.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Bootstrap.RegistroDeServicos(services, Configuration);
             services.AddControllers()
                 .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = 
                 Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-            services.AddScoped(typeof(IRepositorioBase<>), typeof(RepositorioBase<>));
-            services.AddScoped<ITipoPratoRepositorio, TipoPratoRepositorio>();
-            services.AddScoped<IAgendaCardapioRepositorio, AgendaCardapioRepositorio>();
-            services.AddScoped<IAgendaRepositorio, AgendaRepositorio>();
-            services.AddScoped<ICardapioRepositorio, CardapioRepositorio>();
-            services.AddScoped<IIngredienteRepositorio, IngredienteRepositorio>();
-            services.AddScoped<IPratoRepositorio, PratoRepositorio>();
-            services.AddScoped<IPratosIngredientesRepositorio, PratosIngredientesRepositorio>();
-            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
-                        
-            services.AddScoped<ITipoPratoAplicacao, TipoPratoAplicacao>();
-            services.AddScoped<IAgendaCardapioAplicacao, AgendaCardapioAplicacao>();
-            services.AddScoped<IAgendaAplicacao, AgendaAplicacao>();
-            services.AddScoped<ICardapioAplicacao, CardapioAplicacao>();
-            services.AddScoped<IIngredienteAplicacao, IngredienteAplicacao>();
-            services.AddScoped<IPratoAplicacao, PratoAplicacao>();
-            services.AddScoped<IPratosIngredientesAplicacao, PratosIngredientesAplicacao>();
-            services.AddScoped<IUsuarioAplicacao, UsuarioAplicacao>();
-
             services.AddAutoMapper(typeof(AutoMapperConfig));
             services.AddSwaggerGen(x => x.SwaggerDoc(name: "v1", new OpenApiInfo { Title = "Restaurante da Thamy", Version = "v1" }));
-
-            services.AddDbContext<Contexto>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MinhaConexao")));
-
-            services.AddIdentity<IdentityUser, IdentityRole>()
-              .AddEntityFrameworkStores<Contexto>();
 
             var section = Configuration.GetSection("Token");
             services.Configure<Token>(section);

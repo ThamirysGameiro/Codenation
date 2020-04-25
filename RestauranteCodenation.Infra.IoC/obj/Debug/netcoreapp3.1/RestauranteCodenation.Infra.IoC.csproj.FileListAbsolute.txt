@@ -1,0 +1,16 @@
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.deps.json
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\obj\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.csprojAssemblyReference.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\obj\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.AssemblyInfoInputs.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\obj\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.AssemblyInfo.cs
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Application.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Data.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Domain.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Application.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Data.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Domain.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\obj\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.csproj.CopyComplete
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\bin\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.pdb
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\obj\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.csproj.CoreCompileInputs.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\obj\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Infra.IoC\obj\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.pdb

@@ -281,3 +281,5 @@ C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\obj\Debug\netcoreapp3.1\RestauranteCodenation.Api.csproj.CoreCompileInputs.cache
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\obj\Debug\netcoreapp3.1\RestauranteCodenation.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\obj\Debug\netcoreapp3.1\RestauranteCodenation.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.dll
+C:\Users\thami\Source\Repos\RestauranteCodenation\RestauranteCodenation.Api\bin\Debug\netcoreapp3.1\RestauranteCodenation.Infra.IoC.pdb

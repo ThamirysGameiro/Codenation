@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using RestauranteCodenation.Domain;
-using RestauranteCodenation.Domain.Repositorio;
+using RestauranteCodenation.Application;
 
 namespace RestauranteCodenation.Api.Controllers
 {
@@ -9,43 +8,43 @@ namespace RestauranteCodenation.Api.Controllers
     [ApiController]
     public class AgendaCardapioController : ControllerBase
     {
-        private readonly IAgendaCardapioRepositorio _repo;
-        public AgendaCardapioController(IAgendaCardapioRepositorio repo)
+        private readonly IAgendaCardapioAplicacao _app;
+        public AgendaCardapioController(IAgendaCardapioAplicacao app)
         {
-            _repo = repo;
+            _app = app;
         }
                 
         [HttpGet]
-        public IEnumerable<AgendaCardapio> Get()
+        public IEnumerable<AgendaCardapioViewModel> Get()
         {
-            return _repo.SelecionarTodos();
+            return _app.SelecionarTodos();
         }
                 
         [HttpGet("{id}")]
-        public AgendaCardapio Get(int id)
+        public AgendaCardapioViewModel Get(int id)
         {
-            return _repo.SelecionarPorId(id);
+            return _app.SelecionarPorId(id);
         }
                 
         [HttpPost]
-        public AgendaCardapio Post([FromBody] AgendaCardapio agendaCardapio)
+        public AgendaCardapioViewModel Post([FromBody] AgendaCardapioViewModel agendaCardapio)
         {
-            _repo.Incluir(agendaCardapio);
+            _app.Incluir(agendaCardapio);
             return agendaCardapio;
         }
                 
         [HttpPut]
-        public AgendaCardapio Put([FromBody] AgendaCardapio agendaCardapio)
+        public AgendaCardapioViewModel Put([FromBody] AgendaCardapioViewModel agendaCardapio)
         {
-            _repo.Alterar(agendaCardapio);
+            _app.Alterar(agendaCardapio);
             return agendaCardapio;
         }
 
         [HttpDelete("{id}")]
-        public List<AgendaCardapio> Delete(int id)
+        public List<AgendaCardapioViewModel> Delete(int id)
         {
-            _repo.Excluir(id);
-            return _repo.SelecionarTodos();
+            _app.Excluir(id);
+            return _app.SelecionarTodos();
         }
     }
 }

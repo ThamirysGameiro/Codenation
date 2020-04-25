@@ -18,8 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RestauranteCodenation.Application\RestauranteCodenation.Application.csproj" />
-    <ProjectReference Include="..\RestauranteCodenation.Data\RestauranteCodenation.Data.csproj" />
-    <ProjectReference Include="..\RestauranteCodenation.Domain\RestauranteCodenation.Domain.csproj" />
+    <ProjectReference Include="..\RestauranteCodenation.Infra.IoC\RestauranteCodenation.Infra.IoC.csproj" />
   </ItemGroup>
 
 

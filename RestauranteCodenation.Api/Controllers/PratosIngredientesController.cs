@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using RestauranteCodenation.Domain;
-using RestauranteCodenation.Domain.Repositorio;
+using RestauranteCodenation.Application;
 
 namespace RestauranteCodenation.Api.Controllers
 {
@@ -9,43 +8,43 @@ namespace RestauranteCodenation.Api.Controllers
     [ApiController]
     public class PratosIngredientesController : ControllerBase
     {
-        private readonly IPratosIngredientesRepositorio _repo;
-        public PratosIngredientesController(IPratosIngredientesRepositorio repo)
+        private readonly IPratosIngredientesAplicacao _app;
+        public PratosIngredientesController(IPratosIngredientesAplicacao app)
         {
-            _repo = repo;
+            _app = app;
         }
 
         [HttpGet]
-        public IEnumerable<PratosIngredientes> Get()
+        public IEnumerable<PratosIngredientesViewModel> Get()
         {
-            return _repo.SelecionarCompleto();
+            return _app.SelecionarCompleto();
         }
 
         [HttpGet("{id}")]
-        public PratosIngredientes Get(int id)
+        public PratosIngredientesViewModel Get(int id)
         {
-            return _repo.SelecionarPorId(id);
+            return _app.SelecionarPorId(id);
         }
 
         [HttpPost]
-        public PratosIngredientes Post([FromBody] PratosIngredientes pratosIngredientes)
+        public PratosIngredientesViewModel Post([FromBody] PratosIngredientesViewModel pratosIngredientes)
         {
-            _repo.Incluir(pratosIngredientes);
+            _app.Incluir(pratosIngredientes);
             return pratosIngredientes;
         }
 
         [HttpPut]
-        public PratosIngredientes Put([FromBody] PratosIngredientes pratosIngredientes)
+        public PratosIngredientesViewModel Put([FromBody] PratosIngredientesViewModel pratosIngredientes)
         {
-            _repo.Alterar(pratosIngredientes);
+            _app.Alterar(pratosIngredientes);
             return pratosIngredientes;
         }
 
         [HttpDelete("{id}")]
-        public List<PratosIngredientes> Delete(int id)
+        public List<PratosIngredientesViewModel> Delete(int id)
         {
-            _repo.Excluir(id);
-            return _repo.SelecionarTodos();
+            _app.Excluir(id);
+            return _app.SelecionarTodos();
         }
     }
 }

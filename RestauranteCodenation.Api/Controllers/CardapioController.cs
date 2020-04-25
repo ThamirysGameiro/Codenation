@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using RestauranteCodenation.Domain;
-using RestauranteCodenation.Domain.Repositorio;
+using RestauranteCodenation.Application;
 
 namespace RestauranteCodenation.Api.Controllers
 {
@@ -9,43 +8,43 @@ namespace RestauranteCodenation.Api.Controllers
     [ApiController]
     public class CardapioController : ControllerBase
     {
-        private readonly ICardapioRepositorio _repo;
-        public CardapioController(ICardapioRepositorio repo)
+        private readonly ICardapioAplicacao _app;
+        public CardapioController(ICardapioAplicacao app)
         {
-            _repo = repo;
+            _app = app;
         }
                 
         [HttpGet]
-        public IEnumerable<Cardapio> Get()
+        public IEnumerable<CardapioViewModel> Get()
         {
-            return _repo.SelecionarTodos();
+            return _app.SelecionarTodos();
         }
 
         [HttpGet("{id}")]
-        public Cardapio Get(int id)
+        public CardapioViewModel Get(int id)
         {
-            return _repo.SelecionarPorId(id);
+            return _app.SelecionarPorId(id);
         }
 
         [HttpPost]
-        public Cardapio Post([FromBody] Cardapio cardapio)
+        public CardapioViewModel Post([FromBody] CardapioViewModel cardapio)
         {
-            _repo.Incluir(cardapio);
+            _app.Incluir(cardapio);
             return cardapio;
         }
 
         [HttpPut("{id}")]
-        public Cardapio Put([FromBody] Cardapio cardapio)
+        public CardapioViewModel Put([FromBody] CardapioViewModel cardapio)
         {
-            _repo.Alterar(cardapio);
+            _app.Alterar(cardapio);
             return cardapio;
         }
 
         [HttpDelete("{id}")]
-        public List<Cardapio> Delete(int id)
+        public List<CardapioViewModel> Delete(int id)
         {
-            _repo.Excluir(id);
-            return _repo.SelecionarTodos();
+            _app.Excluir(id);
+            return _app.SelecionarTodos();
         }
     }
 }

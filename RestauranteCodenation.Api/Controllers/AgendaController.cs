@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using RestauranteCodenation.Domain;
-using RestauranteCodenation.Domain.Repositorio;
+using RestauranteCodenation.Application;
 
 namespace RestauranteCodenation.Api.Controllers
 {
@@ -9,43 +8,43 @@ namespace RestauranteCodenation.Api.Controllers
     [ApiController]
     public class AgendaController : ControllerBase
     {
-        private readonly IAgendaRepositorio _repo;
-        public AgendaController(IAgendaRepositorio repo)
+        private readonly IAgendaAplicacao _app;
+        public AgendaController(IAgendaAplicacao app)
         {
-            _repo = repo;
+            _app = app;
         }
         
         [HttpGet]
-        public IEnumerable<Agenda> Get()
+        public IEnumerable<AgendaViewModel> Get()
         {
-            return _repo.SelecionarTodos();
+            return _app.SelecionarTodos();
         }
 
         [HttpGet("{id}")]
-        public Agenda Get(int id)
+        public AgendaViewModel Get(int id)
         {
-            return _repo.SelecionarPorId(id);
+            return _app.SelecionarPorId(id);
         }
 
         [HttpPost]
-        public Agenda Post([FromBody] Agenda agenda)
+        public AgendaViewModel Post([FromBody] AgendaViewModel agenda)
         {
-            _repo.Incluir(agenda);
+            _app.Incluir(agenda);
             return agenda;
         }
 
         [HttpPut]
-        public Agenda Put([FromBody] Agenda agenda)
+        public AgendaViewModel Put([FromBody] AgendaViewModel agenda)
         {
-            _repo.Alterar(agenda);
+            _app.Alterar(agenda);
             return agenda;
         }
 
         [HttpDelete("{id}")]
-        public List<Agenda> Delete(int id)
+        public List<AgendaViewModel> Delete(int id)
         {
-            _repo.Excluir(id);
-            return _repo.SelecionarTodos();
+            _app.Excluir(id);
+            return _app.SelecionarTodos();
         }
     }
 }
