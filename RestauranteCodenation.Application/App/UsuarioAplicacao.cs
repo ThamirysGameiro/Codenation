@@ -19,7 +19,7 @@ namespace RestauranteCodenation.Application.App
             IOptions<Token> token)
         {
             _repo = repo;
-            _token = token.Value;
+            _token = token?.Value;
         }
 
         public async Task<bool> Incluir(UsuarioViewModel usuario)

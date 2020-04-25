@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteCodenation.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteCodenation.Data", "RestauranteCodenation.Data\RestauranteCodenation.Data.csproj", "{F4CAAEC9-0935-4519-91B8-C892F4F8240C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteCodenation.Application", "RestauranteCodenation.Application\RestauranteCodenation.Application.csproj", "{6D3FAEEB-D987-4833-9208-069F52579221}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteCodenation.Application", "RestauranteCodenation.Application\RestauranteCodenation.Application.csproj", "{6D3FAEEB-D987-4833-9208-069F52579221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteCodenation.Test", "RestauranteCodenation.Test\RestauranteCodenation.Test.csproj", "{742D3EAF-B80B-46F0-9263-119AA254210F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6D3FAEEB-D987-4833-9208-069F52579221}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D3FAEEB-D987-4833-9208-069F52579221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D3FAEEB-D987-4833-9208-069F52579221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{742D3EAF-B80B-46F0-9263-119AA254210F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742D3EAF-B80B-46F0-9263-119AA254210F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742D3EAF-B80B-46F0-9263-119AA254210F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742D3EAF-B80B-46F0-9263-119AA254210F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
